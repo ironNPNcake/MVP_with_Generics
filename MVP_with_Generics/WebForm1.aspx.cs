@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace MVP_with_Generics
 {
-    public partial class WebForm1 : BaseView<AuctionPresenter>, IBaseView
+    public partial class WebForm1 : BaseView<AuctionPresenter>
     {
         //AuctionPresenter presenter; 
         protected void Page_Load(object sender, EventArgs e)

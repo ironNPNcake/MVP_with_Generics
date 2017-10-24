@@ -78,6 +78,7 @@
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
+    <Content Include="Wera.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AuctionPresenter.cs" />
@@ -99,6 +100,14 @@
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Wera.aspx.cs">
+      <DependentUpon>Wera.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wera.aspx.designer.cs">
+      <DependentUpon>Wera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WeraPresenter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

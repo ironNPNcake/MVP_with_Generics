@@ -10,17 +10,11 @@ namespace MVP_with_Generics
     {
         //IBaseView IBasePresenter<IBaseView>.View { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         // protected override WebForm1 view { get; set; }
-        private WebForm1 view { get; set; }
+        private WebForm1 view;
         public override IBaseView View
         {
-            get
-            {
-                return view;
-            }
-            set
-            {
-                view = value as WebForm1;
-            }
+            get => view;
+            set => view = value as WebForm1;
         }
 
         public void ChangeAlfa()
