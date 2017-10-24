@@ -6,12 +6,12 @@ using System.Web.UI.WebControls;
 
 namespace MVP_with_Generics
 {
-    public class AuctionPresenter :BasePresenter<WebForm1>
+    public class AuctionPresenter : BasePresenter<IBaseView>
     {
         //IBaseView IBasePresenter<IBaseView>.View { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public override WebForm1 View { get; set; }
-
-        public IBaseView view
+        // protected override WebForm1 view { get; set; }
+        private WebForm1 view { get; set; }
+        public override IBaseView View
         {
             get
             {
@@ -22,15 +22,14 @@ namespace MVP_with_Generics
                 view = value as WebForm1;
             }
         }
-        
+
         public void ChangeAlfa()
         {
-           // view.alfa = "siema";
+             view.Alfa = "siema";
         }
-        public void changeLabel()
+        public void ChangeLabel()
         {
-           // System.Web.UI.WebControls.Label abc = view.Labeleczka;
-            //abc.Text = "siemaneczkodupeczko";
+            view.Labeleczka.Text = "siemaneczkodupeczko";
         }
     }
 }

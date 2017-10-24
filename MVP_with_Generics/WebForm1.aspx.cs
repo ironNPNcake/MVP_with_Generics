@@ -15,7 +15,7 @@ namespace MVP_with_Generics
             if(!IsPostBack)
                 AttachPresenter();
         }
-        public String alfa
+        public String Alfa
         {
             get
             {
@@ -23,7 +23,7 @@ namespace MVP_with_Generics
             }
             set
             {
-                alfa = value;
+                Alfa = value;
             }
         }
         public Label Labeleczka
@@ -34,7 +34,7 @@ namespace MVP_with_Generics
         protected void Unnamed_Click(object sender, EventArgs e)
         {
             AttachPresenter();
-            _presenter.changeLabel();
+            _presenter.ChangeLabel();
         }
     }
 }

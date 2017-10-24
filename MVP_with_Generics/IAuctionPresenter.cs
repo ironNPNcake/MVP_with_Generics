@@ -8,6 +8,6 @@ namespace MVP_with_Generics
 {
     public interface IAuctionPresenter : IBasePresenter<IBaseView>
     {
-        void changeLabel();
+        void ChangeLabel();
     }
 }
